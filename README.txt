@@ -1,4 +1,5 @@
 This repository shows some examples of code written to get interactions and predicted probability graphs resulting from GSEM models.
+Margins, and margins plot does not work in STATA for latent variable GSEM models to graphs were written manually.  
 There are two datasets, one for STATA 14 another for those with version 13 (Not sure if it works on earlier versions).
 The graphs generated are also included in the event you can't run the models(or activate the stored results) with your version of STATA.
 The are two .ster files, which contained the stored results from the GSEM models, one of which takes about a day to run (so results can just be called up instead).

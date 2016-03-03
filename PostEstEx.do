@@ -74,7 +74,7 @@ sum gay1latent
 sum gay1latent // generates r(min) and r(max) for command
 local min=round(r(min),0.01) 
 local max=round(r(max),0.01) //Here and ^ Round to a level appropriate to range of variable
-forvalues val=`min'(.01)`max' {
+forvalues val=`min'(.01)`max' { //Step should be same size as rounding^
 lincom _b[F118:c.ganyright#c.Predisposition]*`val'+_b[F118:ganyright] //Linear Combinations for the interaction
 matrix define slice=( [r(estimate) + invnorm(0.025)*r(se)],[r(estimate)] ,[r(estimate) + invnorm(0.975)*r(se)],[`val'])
 if `val'==`min' matrix plot=slice //^Storing each result in a matrix
